@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>CodePractice</title>
+</head>
+
+{% extends "appname/base.html"%}
+
+{% block content %}
+<section id="code">
+    <p>{{name}}</p>
+    <p>{{country}}</p>
+    <h2>Skills</h2>
+    {% for i in skills %}
+    <p>{{ i }}</p>
+    {% endfor %}
+</section>
+{% endblock content %}
+
+</html>

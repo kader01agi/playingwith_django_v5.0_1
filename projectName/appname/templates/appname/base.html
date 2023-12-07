@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name="author" content="MD. ABDUL KADER">
+    <link rel="stylesheet" href="{% static 'assets/demo.css' %}">
+    <title>Django5.0App</title>
+
+</head>
+
+<body>
+    <header class="headercss">
+        <h1>Web application with Django 5.0</h1>
+    </header>
+    <nav>
+        <p><a href="http://127.0.0.1:8000/marketplace/" target="_blank">Marketplace</a></p>
+        <p><a href="http://127.0.0.1:8000/codepractice/" target="_blank">Codepractice</a></p>
+        <p><a href="http://127.0.0.1:8000/about/" target="_blank">About</a></p>
+        <p><a href="http://127.0.0.1:8000/contacts/" target="_blank">Contacts</a></p>
+    </nav>
+
+    <hr>
+    <main class="maincss">
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <hr>
+    <footer class="footercss">
+        <a href="#top">Back to top</a>
+        <p>&copy;Copyright 2023</p>
+    </footer>
+</body>
+
+</html>
